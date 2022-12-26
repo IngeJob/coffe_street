@@ -9,6 +9,7 @@ import { AddPhotoAlternate as AddPhotoAlternateIcon} from '@mui/icons-material'
 import { submitAvatar } from '../hooks/submitAvatar';
 import { updateAvatar, updateAuthProfile, errorMessage } from '../../store/auth/authSlice';
 import { updateProfile } from '../hooks/updateProfile';
+import { ErrorMessage } from '@hookform/error-message';
 import Logo from '../../client/assets/Logo.svg'
 
 export const ProfileView = () => {
@@ -177,7 +178,7 @@ export const ProfileView = () => {
                 }
               })}
               error={!!errors?.fullname}
-              helperText={errors?.fullname?.message}
+              helperText={<ErrorMessage errors={errors} name='fullname' />}
             />
             <TextField 
               label="Usuario"
@@ -194,7 +195,7 @@ export const ProfileView = () => {
                 },
               })}
               error={!!errors?.username}
-              helperText={errors?.username?.message}
+              helperText={<ErrorMessage errors={errors} name='username' />}
             />
 
             <TextField
@@ -226,7 +227,7 @@ export const ProfileView = () => {
                 }
               })}
               error={!!errors?.password}
-              helperText={errors?.password?.message}
+              helperText={<ErrorMessage errors={errors} name='password' />}
             />
             <TextField
               label="Confirmar Contraseña"
@@ -254,7 +255,7 @@ export const ProfileView = () => {
                 validate: value => value === watchPass || 'La contraseña no coincide'
               })}
               error={!!errors?.confirmPassword}
-              helperText={errors?.confirmPassword?.message}
+              helperText={<ErrorMessage errors={errors} name='confirmPassword' />}
             />
             <TextField 
               label="Teléfono"
@@ -271,7 +272,7 @@ export const ProfileView = () => {
                 }
               })}
               error={!!errors?.phone}
-              helperText={errors?.phone?.message}
+              helperText={<ErrorMessage errors={errors} name='phone' />}
             />
             <Box display={errorMsg ? '' : 'none'}>
               <Alert severity='error'>{errorMsg}</Alert> 

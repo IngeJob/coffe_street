@@ -23,7 +23,7 @@ export interface categoryProductProps{
         image: string,
         price: number, 
         amount?: number,
-    }
+    }[]
 }
 
 export interface userOrder {

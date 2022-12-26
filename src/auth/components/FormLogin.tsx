@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useAppDispatch, useAppSelector } from '../../store/hooks/hooks';
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
+import { ErrorMessage } from '@hookform/error-message'; 
 import { Alert, Box, Button, IconButton, InputAdornment, Link, TextField, Typography } from '@mui/material';
 import { Link as RouterLink, useNavigate } from 'react-router-dom';
 import { ArrowCircleLeft, Visibility, VisibilityOff } from '@mui/icons-material';
@@ -116,11 +117,11 @@ export const FormLogin = () => {
               required: "Ingrese su correo electrónico o usuario valido",
               pattern: {
                 value: /^(?:[a-zA-Z0-9À-ÿ\u00f1\u00d1]{2,30}|[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,})$/,
-                message: 'usuario o correo electrónico inválido'
+                message: 'Usuario o correo electrónico inválido'
               }
             })}
             error={!!errors?.username_email}
-            helperText={errors?.username_email?.message}
+            helperText={<ErrorMessage errors={errors} name='username_email' />}
           />
 
           <TextField
@@ -152,7 +153,7 @@ export const FormLogin = () => {
               }
             })}
             error={!!errors?.password}
-            helperText={errors?.password?.message}
+            helperText={<ErrorMessage errors={errors} name='password' />}
           />
 
           <Link

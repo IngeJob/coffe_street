@@ -1,5 +1,5 @@
 import { Box, Grid, Typography } from '@mui/material'
-import { categoryProductProps } from "../features/types";
+import { categoryProductProps, productProps } from "../features/types";
 import { MenuCard } from './MenuCard';
 
 type MenuListProductsProps = {
@@ -53,7 +53,7 @@ export const MenuListProducts = ({categoryProducts}: MenuListProductsProps) => {
               rowSpacing={2}
               columnSpacing={{ xs: 0, sm: 1, md: 2, lg: 2 }}
             >
-              {listProducts.map(product => (
+              {listProducts.map( (product:productProps) => (
                 <Grid
                   item
                   xs={10}

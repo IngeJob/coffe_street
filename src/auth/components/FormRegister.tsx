@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
 import { Alert, Box, Button, IconButton, InputAdornment, Link, TextField, Typography } from '@mui/material';
 import { Link as RouterLink, useNavigate } from 'react-router-dom';
+import { ErrorMessage } from '@hookform/error-message';
 import { ArrowCircleLeft, Visibility, VisibilityOff } from '@mui/icons-material';
 import { useAppDispatch, useAppSelector } from '../../store/hooks/hooks';
 import { submitRegister } from '../hooks/SubmitRegister';
@@ -123,7 +124,7 @@ export const FormRegister = () => {
               }
             })}
             error={!!errors?.fullname}
-            helperText={errors?.fullname?.message}
+            helperText={<ErrorMessage errors={errors} name='fullname' />}
           />
           <TextField 
             label="Usuario"
@@ -140,7 +141,7 @@ export const FormRegister = () => {
               }
             })}
             error={!!errors?.username}
-            helperText={errors?.username?.message}
+            helperText={<ErrorMessage errors={errors} name='username' />}
           />
           
           <TextField 
@@ -158,7 +159,7 @@ export const FormRegister = () => {
               }
             })}
             error={!!errors?.email}
-            helperText={errors?.email?.message}
+            helperText={<ErrorMessage errors={errors} name='email' />}
           />
           <TextField
             label="Contraseña"
@@ -189,7 +190,7 @@ export const FormRegister = () => {
               }
             })}
             error={!!errors?.password}
-            helperText={errors?.password?.message}
+            helperText={<ErrorMessage errors={errors} name='password' />}
           />
           <TextField
             label="Confirmar Contraseña"
@@ -217,7 +218,7 @@ export const FormRegister = () => {
               validate: value => value === watchPass || 'La contraseña no coincide'
             })}
             error={!!errors?.confirmPassword}
-            helperText={errors?.confirmPassword?.message}
+            helperText={<ErrorMessage errors={errors} name='confirmPassword' />}
           />
           <TextField 
             label="Teléfono"
@@ -234,7 +235,7 @@ export const FormRegister = () => {
               }
             })}
             error={!!errors?.phone}
-            helperText={errors?.phone?.message}
+            helperText={<ErrorMessage errors={errors} name='phone' />}
           />
           <Box display={errorMsg ? '' : 'none'}>
             <Alert severity='error'>{errorMsg}</Alert> 

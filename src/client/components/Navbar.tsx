@@ -105,12 +105,12 @@ export const Navbar = () => {
   return(
     <AppBar
       position="sticky"
-      color={navColor? 'success': 'transparent'}
     >
       <Container 
         maxWidth="xl" 
         sx={{
           px: { xs: 2, sm: 3, md: 4, lg: 5 },
+          backgroundColor: 'success.main'
         }}
       >
         <Toolbar 
