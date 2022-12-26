@@ -1,0 +1,121 @@
+[
+    {
+        "_id": "6352c3c51cfe03881e92ec5e",
+        "display": "Bebidas alcohólicas",
+        "img": "https://images.pexels.com/photos/13713070/pexels-photo-13713070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "products": [
+            {
+                "_id": "6352c3c71cfe03881e92ec7e",
+                "name": "Cerveza",
+                "description": "La cerveza más fina",
+                "image": "https://images.pexels.com/photos/1672304/pexels-photo-1672304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                "price": 5
+            }
+        ]
+    },
+    {
+        "_id": "6352c3c51cfe03881e92ec60",
+        "display": "Bebidas sin alcohól",
+        "img": "https://images.pexels.com/photos/3230214/pexels-photo-3230214.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "products": [
+            {
+                "_id": "6352c3c71cfe03881e92ec80",
+                "name": "Coca Cola",
+                "description": "Sabor original",
+                "image": "https://plazavea.vteximg.com.br/arquivos/ids/16380946-1000-1000/20016507.jpg",
+                "price": 3
+            },
+            {
+                "_id": "6352c3c71cfe03881e92ecb2",
+                "name": "Seven Up 2L",
+                "description": "refrescante",
+                "image": "https://static.condisline.com/resize_1280x1024/images/catalog/large/605761.jpg",
+                "price": 3
+            }
+        ]
+    },
+    {
+        "_id": "6352c3c61cfe03881e92ec68",
+        "display": "Entradas",
+        "img": "https://images.pexels.com/photos/1211887/pexels-photo-1211887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "products": [
+            {
+                "_id": "635c56d1aaba6e46d1fe1905",
+                "name": "Calabacín frito con queso parmesano",
+                "description": "Calabacín frito con queso parmesano",
+                "image": "https://images.pexels.com/photos/13344448/pexels-photo-13344448.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                "price": 8
+            }
+        ]
+    },
+    {
+        "_id": "6352c3c51cfe03881e92ec62",
+        "display": "Pastas",
+        "img": "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "products": [
+            {
+                "_id": "6352c3c71cfe03881e92ec84",
+                "name": "Pasta al romero",
+                "description": "Pasta con mantequilla, ajo, pasta, pimienta y romero",
+                "image": "https://images.aws.nestle.recipes/original/1828b2ea10adc8c9f710fcf959a55a51_PASTA-AL-ROMERO-Lunch.png",
+                "price": 12
+            }
+        ]
+    },
+    {
+        "_id": "6352c3c61cfe03881e92ec66",
+        "display": "Platos fuertes",
+        "img": "https://images.pexels.com/photos/2454533/pexels-photo-2454533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "products": [
+            {
+                "_id": "6352c3c71cfe03881e92ec86",
+                "name": "Pollo cordon bleu",
+                "description": "cordon bleu al estilo francés",
+                "image": "https://www.deliciosi.com/images/2100/2195/pollo-cordon-bleu.jpg",
+                "price": 18
+            },
+            {
+                "_id": "6352c3c71cfe03881e92ec88",
+                "name": "Filet de mignon perfecto",
+                "description": "Deliciosa pieza de carne con doble cocción que te garantiza una textura suave y jugosa",
+                "image": "https://www.comedera.com/wp-content/uploads/2022/04/Filet-de-mignon-perfecto-shutterstock_1940905432.jpg",
+                "price": 23
+            },
+            {
+                "_id": "6352c3c71cfe03881e92ec84",
+                "name": "Pollo jalapeño",
+                "description": "Deliciosa pieza de Pollo jalapeño",
+                "image": "https://img-global.cpcdn.com/recipes/2391b7486b1808e3/1200x630cq70/photo.jpg",
+                "price": 15
+            },
+            {
+                "_id": "6352c3c71cfe03881e92ec82",
+                "name": "Pasta pomodoro",
+                "description": "Pasta pomodoro, de origen italiano, es una clásico en la cocina.",
+                "image": "https://dam.cocinafacil.com.mx/wp-content/uploads/2014/11/pasta-pomodoro.jpg",
+                "price": 12
+            }
+        ]
+    },
+    {
+        "_id": "6352c3c51cfe03881e92ec64",
+        "display": "Postres",
+        "img": "https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "products": [
+            {
+                "_id": "6352c3c71cfe03881e92ec8a",
+                "name": "Galletas",
+                "description": "galletas de varios sabores",
+                "image": "https://images.pexels.com/photos/110934/pexels-photo-110934.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                "price": 2
+            },
+            {
+                "_id": "6352c3c71cfe03881e92ecb0",
+                "name": "Helado",
+                "description": "helado de sabores",
+                "image": "https://images.pexels.com/photos/1625235/pexels-photo-1625235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                "price": 4
+            }
+        ]
+    }
+]
