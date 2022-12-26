@@ -1,11 +1,12 @@
-import { useSelector } from 'react-redux'
+
+import { useAppSelector } from '../../store/hooks/hooks'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import { LoginPage } from '../pages/LoginPage'
 import { RegisterPage } from '../pages/RegisterPage'
 
 export const AuthRoutes = () => {
 
-  const { status } = useSelector(state => state.auth)
+  const { status } = useAppSelector(state => state.auth)
   if (status === 'authenticated') return <Navigate to='/home' />
 
   return (
